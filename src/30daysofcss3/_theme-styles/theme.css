@@ -44,7 +44,8 @@
       width: 60%;
       max-width: 960px;
       margin: 0 auto 60px;
-      transform: rotate(-3deg);
+      -webkit-transform: rotate(-3deg);
+              transform: rotate(-3deg);
       color: white;
       text-align: left;
       font-size: 5rem;
@@ -208,26 +209,14 @@
       text-shadow:-1px -1px 0 #2C7982;
       background: #00B3B4;
       border:1px solid #379AA4;
-   
-      -webkit-border-radius:4px;
-      -moz-border-radius:4px;
       border-radius:4px;
-   
-      -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
-      -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
       box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
   }
    
     .button-theme::before {
       background:#fa90a3;
       background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ef758b), to(#fa90a3));
-   
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
       border-radius: 4px;
-   
-      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset, 0 1px 0 rgba(255, 255, 255, .5);
-      -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset, 0 1px 0 rgba(255, 255, 255, .5);
       box-shadow: 0 1px 2px rgba(0, 0, 0, .3) inset, 0 1px 0 rgba(255, 255, 255, .5);
    
       position: absolute;
@@ -240,8 +229,6 @@
     }
    
     .button-theme:active {
-      -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 2px 0 #338A94, 0 2px 2px rgba(0, 0, 0, .5);
-      -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 2px 0 #338A94, 0 2px 2px rgba(0, 0, 0, .5);
       box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 2px 0 #338A94, 0 2px 2px rgba(0, 0, 0, .5);
       top: 4px;
     }
@@ -310,7 +297,8 @@
     .info h2 {
       font-size: 1.4rem;
       display: inline-block;
-      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+              transform: rotate(-90deg);
       transition: all ease-in-out .1s;
       position: absolute;
       top: 60px;
@@ -386,7 +374,8 @@
       footer a:hover {
         background: rgba(255,255,255, 0.4);
         box-shadow: -3px 3px 0 #eb2447;
-        transform: rotate(-1deg);
+        -webkit-transform: rotate(-1deg);
+                transform: rotate(-1deg);
       }
    
     footer .made-by, footer .course, footer .copyright {
@@ -409,7 +398,8 @@
    
       footer #logo img {
         position: absolute;
-        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
         transition: all ease 1000ms;
       }
    
@@ -419,18 +409,22 @@
    
       footer:hover #logo_bg-yellow {
         width: 80px;
-        transform: translateX(-10px) translateY(10px) translateZ(-10px);
+        -webkit-transform: translateX(-10px) translateY(10px) translateZ(-10px);
+                transform: translateX(-10px) translateY(10px) translateZ(-10px);
       }
    
       footer:hover #logo_bg-gray {
-        transform: translateX(-20px) translateY(20px) translateZ(-20px);
+        -webkit-transform: translateX(-20px) translateY(20px) translateZ(-20px);
+                transform: translateX(-20px) translateY(20px) translateZ(-20px);
       }
    
       footer:hover #logo {
         opacity: 1;
-        transform: perspective(400px) rotateX(40deg) rotateY(20deg) rotateZ(-25deg) translateX(0) translateY(0px) translateZ(0);
+        -webkit-transform: perspective(400px) rotateX(40deg) rotateY(20deg) rotateZ(-25deg) translateX(0) translateY(0px) translateZ(0);
+                transform: perspective(400px) rotateX(40deg) rotateY(20deg) rotateZ(-25deg) translateX(0) translateY(0px) translateZ(0);
       }
    
       footer:hover .made-by, footer:hover .course, footer:hover .copyright {
         padding-left: 140px;
       }
+/*# sourceMappingURL=theme.css.map */

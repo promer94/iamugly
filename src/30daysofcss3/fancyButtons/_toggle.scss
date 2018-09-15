@@ -1,0 +1,93 @@
+$unchecked: #f2395a;
+$checked: #00b3b4;
+@mixin box {
+    position: absolute;
+    display: inline-block;
+    height:20px;
+    padding: 0 3px;
+    background-color: #fff;
+    transition: all ease 0.3s;
+    
+}
+.toggle-1{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+    .toggle-1__button{
+        position: relative;
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 20px;
+        text-transform: uppercase;
+        background-color: $unchecked;
+        border: solid 1px $unchecked;
+        color: white;
+        width: 80px;
+        height: 30px;
+        cursor: pointer;
+        &::before{
+            @include box;
+            top:5px;
+            left:40px;
+            content:"off";
+            color: $unchecked;
+            transition: all ease 0.3s;
+        }
+    }
+    .toggle-1__input{
+        display: none;
+        &:checked + .toggle-1__button{
+            background-color: $checked;
+            transition: all ease 0.3s;
+            &::before{
+                @include box;
+                top:5px;
+                left:5px;
+                content: "on";
+                color:$checked;
+            }
+        }
+    }
+}
+
+.toggle-2{
+    font-size: 0.8rem;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 0 0;
+    
+    .toggle-2__button{
+        position: relative;
+        display: inline-block;
+        line-height: 20px;
+        text-transform: uppercase;
+        background: #fff;
+        color: #aaa;
+        border: 1px solid #ccc;
+        padding: 5px 10px 5px 30px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &::before{
+            position: absolute;
+            top:10px;
+            left: 10px;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #ccc;
+            content: "";
+            transition: all 0.3s ease;
+        }
+    }
+    .toggle-2__input{
+        display: none;
+        &:checked + .toggle-2__button{
+            background: #aaa;
+            color: white;
+            transition: all 0.3s ease;
+            &::before{
+                background: #fff;
+            }
+        }
+    }
+}
