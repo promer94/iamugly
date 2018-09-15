@@ -1,0 +1,44 @@
+$color: #2db34a;
+$hover: #ff7b29;
+$black:#000000;
+.arrow{
+    background: #2db34a;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    padding: 0 12px;
+    position: relative;
+    text-decoration: none;
+    @mixin element {
+        content:"";
+        height: 0;
+        position: absolute;
+        width: 0;
+    }
+    &::before{
+        @include element;
+        border-bottom: 15px solid $color;
+        border-left: 15px solid transparent;
+        border-top: 15px solid $color;
+        left: -15px;
+    }
+    &::after{
+        @include element;
+        border-bottom: 15px solid transparent;
+        border-top: 15px solid transparent;
+        border-left: 15px solid $color;
+        right: -15px;
+    }
+    &:hover{
+        background: $hover;
+        &::before {
+            border-bottom: 15px solid #ff7b29;
+            border-top: 15px solid #ff7b29;
+          }
+        &::after{
+            border-left: 15px solid $hover;
+        }
+    }
+}

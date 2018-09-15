@@ -1,0 +1,57 @@
+$dark: #4267b2;
+$dark-active: #1d4698;
+$dark-hover: #2b54a7;
+$dark-shadow: #3359a5;
+
+$light:  #f6f7f9;
+$light-hover:#e9ebee;
+$light-active: #d8dade;
+
+
+@mixin dark($color) {
+    -moz-box-shadow:    inset 0px 1px 0px 0px $color;
+    -webkit-box-shadow: inset 0px 1px 0px 0px $color;
+    box-shadow:         inset 0px 1px 0px 0px $color;
+    background: $color;
+    border: 1px solid $color;
+    color: #fff;
+    text-shadow: 0 1px 0px $color;
+}
+
+@mixin light($color){
+    background: $light;
+    border: 1px solid #ced0d4;
+    border-radius: 2px;
+    color: #4b4f56;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+
+.facebook-style-btn{
+    border-radius: 2px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.dark{
+    @include dark($dark);
+    &:hover{
+        background: $dark-hover
+    }
+    &:active{
+        background: $dark-active;
+        border-color: $dark-active;
+    }
+}
+.light{
+    @include light($light);
+    &:hover{
+        background: $light-hover;
+    };
+    &:active{
+        background: $light-active;
+        border-color: $light-active;
+    }
+}

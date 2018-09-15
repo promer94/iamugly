@@ -1,0 +1,32 @@
+.facebook-style-btn {
+  border-radius: 2px;
+  font-size: 0.9rem;
+  padding: 6px 12px; }
+
+.dark {
+  -moz-box-shadow: inset 0px 1px 0px 0px #4267b2;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #4267b2;
+  box-shadow: inset 0px 1px 0px 0px #4267b2;
+  background: #4267b2;
+  border: 1px solid #4267b2;
+  color: #fff;
+  text-shadow: 0 1px 0px #4267b2; }
+  .dark:hover {
+    background: #2b54a7; }
+  .dark:active {
+    background: #1d4698;
+    border-color: #1d4698; }
+
+.light {
+  background: #f6f7f9;
+  border: 1px solid #ced0d4;
+  border-radius: 2px;
+  color: #4b4f56;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 6px 12px; }
+  .light:hover {
+    background: #e9ebee; }
+  .light:active {
+    background: #d8dade;
+    border-color: #d8dade; }
