@@ -1,17 +1,9 @@
-/*
-Clear fix
-*/
-
-.clear:before,
-.clear:after{
+.clear {
+  clear: both; }
+  .clear::after, .clear::before {
     content: "";
-    display: table;
-}
-.clear:after{
-    clear: both;
-}
-.clear{
-    clear: both;
-    *zoom: 1;
-}
+    display: table; }
+  .clear::after {
+    clear: both; }
+
 /*# sourceMappingURL=clearfix.css.map */
