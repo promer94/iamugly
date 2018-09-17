@@ -287,5 +287,4 @@
       transition: all 0.3s ease; }
       .toggle-2 .toggle-2__input:checked + .toggle-2__button::before {
         background: #fff; }
-
 /*# sourceMappingURL=sandbox.css.map */

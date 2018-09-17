@@ -1,0 +1,30 @@
+body {
+  color: #fff;
+  font: 600 24px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 45px; }
+  body .spin {
+    cursor: pointer;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; }
+  body .cube {
+    position: relative;
+    width: 95px; }
+    body .cube .side {
+      height: 95px;
+      line-height: 95px;
+      position: absolute;
+      text-align: center;
+      width: 95px; }
+    body .cube .top {
+      background: #33cc54;
+      -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+              transform: rotate(-45deg) skew(15deg, 15deg); }
+    body .cube .left {
+      background: #2db34a;
+      -webkit-transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%);
+              transform: rotate(15deg) skew(15deg, 15deg) translate(-50%, 100%); }
+    body .cube .right {
+      background: #26973e;
+      -webkit-transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%);
+              transform: rotate(-15deg) skew(-15deg, -15deg) translate(50%, 100%); }
+/*# sourceMappingURL=style.css.map */

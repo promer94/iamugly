@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass-chokidar src/ -o src/",
-    "postcss": "postcss src/**/**/*.css --replace --use autoprefixer -m",
+    "postcss": "postcss src/**/*.css --replace --use autoprefixer -m",
     "watch": "npm run build && node-sass-chokidar src/ -o src/ --watch --recursive"
   },
   "author": "",
