@@ -92,7 +92,6 @@ $text_shadow: #c3af07;
     z-index: 4;
     @include boxshadow;
     outline:none;
-    
     &:hover{
         @include gradient(45%, 35%)
     }
