@@ -1,0 +1,42 @@
+html, body {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center; }
+  html .box, body .box {
+    display: block;
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none; }
+    html .box span, body .box span {
+      display: inline-block;
+      color: blue;
+      transition: 0.5s; }
+      html .box span::before, body .box span::before {
+        content: attr(data-text);
+        color: red;
+        position: absolute; }
+      html .box span:nth-child(odd), body .box span:nth-child(odd) {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%); }
+        html .box span:nth-child(odd)::before, body .box span:nth-child(odd)::before {
+          -webkit-transform: translateY(100%);
+                  transform: translateY(100%); }
+      html .box span:nth-child(even), body .box span:nth-child(even) {
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%); }
+        html .box span:nth-child(even)::before, body .box span:nth-child(even)::before {
+          -webkit-transform: translateY(-100%);
+                  transform: translateY(-100%); }
+    html .box:hover span, body .box:hover span {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+
+/*# sourceMappingURL=style.css.map */
