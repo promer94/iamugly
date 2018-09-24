@@ -1,0 +1,26 @@
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+  background-color: #ffeead; }
+  html .container, body .container {
+    border: 5px solid #ffcc5c;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end; }
+    html .container > div:nth-child(odd), body .container > div:nth-child(odd) {
+      background-color: #96ceb4; }
+    html .container > div:nth-child(even), body .container > div:nth-child(even) {
+      background-color: #ff6f69; }
+    html .container .item, body .container .item {
+      padding: 10px;
+      text-align: center;
+      font-size: 2em;
+      color: #ffeead; }
+
+body {
+  margin: 0; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+html, body{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    background-color: #ffeead;
+    .container{
+        border: 5px solid #ffcc5c;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        & > div:nth-child(odd){
+            background-color: #96ceb4;
+        }
+        & > div:nth-child(even){
+            background-color: #ff6f69;
+        }
+        .item{
+            padding: 10px;
+            text-align: center;
+            font-size: 2em;
+            color: #ffeead;
+        }
+    }
+}
+body{
+    margin: 0;
+}
