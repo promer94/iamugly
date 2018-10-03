@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(deepskyblue, navy); }
+  body ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body ul li {
+      color: #ddd;
+      font-size: 25px;
+      text-transform: uppercase;
+      position: relative;
+      transition: 0.3s;
+      overflow: hidden;
+      margin: 0.5em;
+      cursor: pointer; }
+      body ul li::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: tomato;
+        left: -100%;
+        transition: 0.3s ease-out; }
+      body ul li::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2em;
+        bottom: 0;
+        background-color: tomato;
+        left: 100%;
+        transition: 0.3s 0.3s ease-out; }
+      body ul li:hover {
+        color: #ddd; }
+      body ul li:hover::before {
+        left: 100%; }
+      body ul li:hover::after {
+        left: 0; }
+
+/*# sourceMappingURL=style.css.map */
