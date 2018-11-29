@@ -1,3 +1,4 @@
+'use strict'
 class TypeWriter {
 
   constructor(element = document.querySelector('.txt-type')) {
@@ -49,3 +50,4 @@ class TypeWriter {
 }
 
 const writer = new TypeWriter()
+console.log(writer)

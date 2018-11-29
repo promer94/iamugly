@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:200,100,400");
 body {
-  font-family: 'Raleway',sans-serif;
+  font-family: 'dm',sans-serif;
   height: 100vh;
   background: #333 url("https://image.ibb.co/n5A2HU/showcase.jpg") no-repeat center center/cover;
   color: #ccc;
@@ -18,6 +17,7 @@ body {
       font-size: 3.5rem; }
     body .container h2 {
       font-size: 2rem;
+      font-style: italic;
       color: #aaa; }
     body .container .txt-type > .txt {
       border-right: 0.2rem solid #777; }

@@ -1,0 +1,11 @@
+.container{
+    width: 100%;
+    display: flex
+}
+.bar{
+    flex:1
+}
+.button {
+
+    width:30px;
+}
